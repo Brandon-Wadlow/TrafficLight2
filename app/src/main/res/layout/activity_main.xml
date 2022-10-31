@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.wadlow.trafficlight.ButtonFragment"
+        tools:layout="@layout/fragment_button"
+        android:id="@+id/button_fragment"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.wadlow.trafficlight.TrafficLightFragment"
+        tools:layout="@layout/fragment_traffic_light"
+        android:id="@+id/light_fragment"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>
